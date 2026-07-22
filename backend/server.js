@@ -25,3 +25,10 @@ const gracefulShutdown = (signal) => {
 process.on("SIGINT", () => gracefulShutdown("SIGINT"));
 process.on("SIGTERM", () => gracefulShutdown("SIGTERM"));
 
+process.on("uncaughtException", (err) => {
+  console.error("UNCAUGHT:", err);
+});
+
+process.on("unhandledRejection", (err) => {
+  console.error("UNHANDLED:", err);
+});
