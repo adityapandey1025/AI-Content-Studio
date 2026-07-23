@@ -144,6 +144,8 @@ App URL: `http://localhost:3000`
 
 ## AWS Deployment
 
+**Live URL**: `http://ai-content-studio-vibe-env.eba-v2pg5tsz.us-east-1.elasticbeanstalk.com`
+
 See: [`DEPLOYMENT_AWS_APP_RUNNER.md`](./DEPLOYMENT_AWS_APP_RUNNER.md)
 
 ---

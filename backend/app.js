@@ -33,7 +33,7 @@ app.use(
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
         frameAncestors: ["'none'"],
-        upgradeInsecureRequests: []
+        upgradeInsecureRequests: null
       }
     }
   })

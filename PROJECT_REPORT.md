@@ -13,7 +13,7 @@ Users frequently need polished written content in different formats, but creatin
 - Develop a complete full stack AI web app using HTML/CSS/JS and Node/Express.
 - Integrate OpenRouter with secure backend API key handling.
 - Provide streamed responses for better UX.
-- Ensure production-grade security and deployability (Docker + AWS App Runner).
+- Ensure production-grade security and deployability (Docker + AWS Elastic Beanstalk).
 - Deliver comprehensive technical documentation and university project artifacts.
 
 ## 4. Target Users
@@ -28,10 +28,10 @@ Users frequently need polished written content in different formats, but creatin
 
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Backend**: Node.js, Express.js
-- **AI API**: OpenRouter (`deepseek/deepseek-chat-v3-0324:free`)
+- **AI API**: OpenRouter (`nvidia/nemotron-3-ultra-550b-a55b:free`)
 - **Security & Ops**: Helmet, CORS, Rate Limiting, Compression, Morgan
-- **Containerization**: Docker, Docker Compose
-- **Cloud Deployment**: AWS App Runner
+- **Containerization**: Docker
+- **Cloud Deployment**: AWS Elastic Beanstalk
 
 ## 6. Application Architecture
 
@@ -75,11 +75,11 @@ Detailed test matrix: `TESTING_GUIDE.md`
 
 ## 10. Deployment
 
-- Dockerized application with exposed `PORT=3000`
-- `docker compose up --build` ready
-- AWS App Runner instructions with environment variables and health endpoint included
+- Dockerized application with exposed port 80
+- `docker build -t ai-content-studio . && docker run -p 3000:80 ai-content-studio` ready
+- Deployed on AWS Elastic Beanstalk with Docker platform
 
-Detailed deployment guide: `DEPLOYMENT_AWS_APP_RUNNER.md`
+Live URL: `http://ai-content-studio-vibe-env.eba-v2pg5tsz.us-east-1.elasticbeanstalk.com`
 
 ## 11. Challenges
 
@@ -113,5 +113,5 @@ This project demonstrates end-to-end software engineering: UI/UX design, backend
 2. Express.js Docs - https://expressjs.com/
 3. MDN Web Docs - https://developer.mozilla.org/
 4. Docker Docs - https://docs.docker.com/
-5. AWS App Runner Docs - https://docs.aws.amazon.com/apprunner/
+5. AWS Elastic Beanstalk Docs - https://docs.aws.amazon.com/elasticbeanstalk/
 

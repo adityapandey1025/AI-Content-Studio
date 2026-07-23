@@ -39,9 +39,9 @@ Build a full stack web application that generates high-quality content in multip
 
 ## Expected Outcome
 
-A production-ready, secure, responsive AI writing studio deployable via Docker and AWS App Runner with a public HTTPS URL.
+A production-ready, secure, responsive AI writing studio deployable via Docker and AWS Elastic Beanstalk with a public URL.
 
-## AWS URL Placeholder
+## Live Deployment URL
 
-`https://<your-app-runner-url>.awsapprunner.com`
+`http://ai-content-studio-vibe-env.eba-v2pg5tsz.us-east-1.elasticbeanstalk.com`
 
