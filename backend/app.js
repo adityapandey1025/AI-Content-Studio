@@ -13,6 +13,12 @@ const { globalErrorHandler } = require("./middleware/errorHandler");
 
 const app = express();
 
+app.use((_req, _res, next) => {
+  // eslint-disable-next-line no-console
+  console.log(`[${new Date().toISOString()}] ${_req.method} ${_req.url} - ${_req.ip}`);
+  next();
+});
+
 app.disable("x-powered-by");
 app.use(
   helmet({

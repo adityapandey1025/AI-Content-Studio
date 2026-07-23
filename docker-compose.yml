@@ -5,8 +5,13 @@ services:
       dockerfile: Dockerfile
     container_name: ai-content-studio
     ports:
-      - "3000:3000"
+      - "8080:80"
     env_file:
       - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=80
+      - CORS_ORIGIN=https://ai-content-studio-env.eba-xsatjs2.us-east-1.elasticbeanstalk.com
+      - OPENROUTER_APP_URL=https://ai-content-studio-env.eba-xsatjs2.us-east-1.elasticbeanstalk.com
     restart: unless-stopped
 

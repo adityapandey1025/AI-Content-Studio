@@ -16,7 +16,6 @@
   "author": "AI Content Studio Team",
   "license": "MIT",
   "dependencies": {
-    "ai-content-studio": "file:..",
     "compression": "^1.8.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
